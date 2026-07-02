@@ -18,15 +18,15 @@ public third-party API (Step 3 of the assessment).
 - Bulk "clear completed" action
 - Dark mode toggle (persisted to `localStorage`)
 - Fully responsive layout (mobile/tablet/desktop)
-- Currency converter using the [Frankfurter](https://www.frankfurter.dev/) API
-  (free, no API key required)
+- Currency converter using the [ExchangeRate-API](https://www.exchangerate-api.com/docs/free)
+  via `open.er-api.com` (free, no API key required)
 
 ## Tech Stack
 
 - **Front end:** React 19, Vite
 - **Back end:** Node.js, Express
 - **Database:** PostgreSQL
-- **Third-party API:** Frankfurter currency exchange API
+- **Third-party API:** ExchangeRate-API (`open.er-api.com`)
 
 ## Project Structure
 
@@ -118,8 +118,8 @@ Open http://localhost:5173 in your browser.
   — free, no API key required, covers 160+ currencies including PKR, INR,
   BDT, NPR, AED, and SAR. (The JD's suggested `exchangerate.host` now
   requires a paid key as of this writing; an earlier version of this app
-  used Frankfurter, but Frankfurter only publishes ECB rates for ~30
-  currencies and does not include PKR, so it was swapped for this API.)
+  previously used a provider with limited currency coverage, so it was
+  swapped for this API.)
 - **Implementation:** [backend/src/routes/currency.js](backend/src/routes/currency.js)
   proxies a request to `open.er-api.com/v6/latest/:from` and returns a
   simplified `{ from, to, rate, amount, converted, date }` payload. The
