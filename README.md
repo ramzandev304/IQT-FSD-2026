@@ -128,12 +128,20 @@ Open http://localhost:5173 in your browser.
   endpoint.
 - **Commit:** see the git history for the commit(s) touching
   `backend/src/routes/currency.js` and `frontend/src/components/CurrencyConverter.jsx`.
+- **Screenshot (API request/response):**
+
+  ![API response](screenshots/response.png)
+
+- **Screenshot (UI using it):**
+
+  ![Currency converter working](screenshots/integration.png)
 
 ## Submission Checklist
 
-- [ ] GitHub Repository Link: _add after pushing to GitHub_
+- [x] GitHub Repository Link: https://github.com/ramzandev304/qt-fsd-task-manager
 - [ ] Live Demo URL: _add if deployed_
 - [x] Setup Instructions: see above
 - [x] Database Schema: see above / [backend/schema.sql](backend/schema.sql)
+- [x] Step 3 API integration + screenshot: see above / [screenshots/response.png](screenshots/response.png)
 - [x] Step 1 video script draft: [STEP1_VIDEO_SCRIPT.md](STEP1_VIDEO_SCRIPT.md)
 - [x] Step 4 answers: [STEP4_ANSWERS.md](STEP4_ANSWERS.md)
